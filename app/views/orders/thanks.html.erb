@@ -1,0 +1,12 @@
+<h1>Thank you for your order!</h1>
+
+<div class="row">
+  <div class="col-sm-8">
+    <h6>Item: <%= @food_item.name %></h6>
+    <h6>Total Cost: <%= @food_item.price %></h6>
+    <h6>Name: <%= @food_item.orders.last.name %></h6>
+    <h6>Phone: <%= @food_item.orders.last.phone %></h6>
+    <h6>Address: <%= @food_item.orders.last.address %></h6>
+    <h6>Time of Order: <%= Time.now.to_formatted_s(:long_ordinal) %></h6>
+  </div>
+</div>

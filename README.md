@@ -20,7 +20,7 @@ URL: https://git.heroku.com/khoa-restaurant.git
   * [x] Lunch
   * [x] Dinner
   * [x] Drinks
-* [ ] User should see at least 5 food items in each section.
+* [x] User should see at least 5 food items in each section.
 * [x] Each food item should have the following fields:
   * Name (Canh Chua)
   * Description (Delicious fish soup)
