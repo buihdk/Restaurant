@@ -17,12 +17,12 @@
 
 <p>
   <strong>Section:</strong>
-  <%= @food_item.section %>
+  <%= @food_item.section.name %>
 </p>
 
 <p>
-  <strong>Image url:</strong>
-  <%= @food_item.image_url %>
+  <strong>Image url:</strong><br/>
+  <%= image_tag @food_item.image_url_or_default, style: 'max-width: 800px' %>
 </p>
 
 <%= link_to 'Edit', edit_food_item_path(@food_item) %> |

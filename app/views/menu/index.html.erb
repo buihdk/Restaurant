@@ -1,4 +1,4 @@
-<h1>Khoa's Menu</h1>
+<h1>Menu</h1>
 
 <ul class="nav nav-pills">
   <% @sections.each do |section| %>
@@ -7,7 +7,22 @@
     </li>
   <% end %>
 </ul>
+
 </br>
+
+<div class="card card-block">
+  <%= form_tag nil, method: 'get' do %>
+    <%= hidden_field_tag :section, params[:section] %>
+    <div class="form-inline">
+      <%= select_tag :sort_column, options_for_select([['Name', 'name'], ['Price', 'price']]), class: 'form-control' %>
+      <%= select_tag :sort_direction, options_for_select([['Ascending', 'asc'], ['Descending', 'desc']]), class: 'form-control' %>
+      <%= submit_tag "Sort", class: 'btn btn-secondary' %> 
+    </div>
+  <% end %>
+</div>
+
+</br>
+
 <% @food_items.in_groups_of(3) do |group| %>
   <div class="col-sm-4">
     <div class="row">
@@ -15,10 +30,14 @@
         <div class="card">
           <%= image_tag food_item.image_url_or_default, atl: food_item.name %>
           <div class="card-block">
-            <h4 class="card-title"><%= food_item.name %></h4>
+            <h4 class="card-title">
+              <%= food_item.name %>
+              <span class="label label-default"><%= food_item.orders.size%></span>
+            </h4>
             <p class="card-text"><%= food_item.description %></p>
           </div>
           <div class="card-block">
+            <%= link_to 'Details', food_item, class: 'btn btn-primary' %>
             <a href="#" class="btn btn-danger">Order</a>
           </div>
         </div>
