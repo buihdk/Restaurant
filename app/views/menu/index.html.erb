@@ -1,0 +1,20 @@
+<h1>Khoa's Menu</h1>
+
+<% @food_items.in_groups_of(3) do |group| %>
+  <div class="col-sm-4">
+    <div class="row">
+      <% group.compact.each do |food_item| %>
+        <div class="card">
+          <%= image_tag food_item.image_url_or_default, atl: food_item.name %>
+          <div class="card-block">
+            <h4 class="card-title"><%= food_item.name %></h4>
+            <p class="card-text"><%= food_item.description %></p>
+          </div>
+          <div class="card-block">
+            <a href="#" class="card-link" btn btn-danger>Order</a>
+          </div>
+        </div>
+      <% end %>  
+    </div>
+  </div>
+<% end %> 
