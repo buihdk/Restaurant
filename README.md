@@ -1,12 +1,12 @@
-# CoderRestaurant Website
+# Khoa's Corner Website
 
-**Coder Restaurant** is a Ruby on Rails restaurant website let users order foods.
+**Khoa's Corner** is a Ruby on Rails restaurant website let users order foods.
 
-Submitted by: **Your Name**
+Submitted by: Khoa Bui
 
-Time spent: **XX** hours spent in total
+Time spent: 10 hours spent in total
 
-URL: **heroku-app-url**
+URL: https://git.heroku.com/khoa-restaurant.git
 
 ## User Stories
 
