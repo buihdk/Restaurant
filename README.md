@@ -58,9 +58,9 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](path-to-your-GIF-file)
+![Video Walkthrough](https://khoa-restaurant.herokuapp.com/)
 
-GIF created with [LiceCap](http://i.imgur.com/PK4xq0N.gifv).
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
